@@ -1,0 +1,65 @@
+<section class="hero-area" id="particles">
+    <div class="hero-area-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Use
+                        <span>AI</span> to improve  your work</h1>
+                    <p>Now you can have both: More time to get things done and happier, more productive employees AI to
+                        Supercharge Your Organization </p>
+                    <form action="#">
+                        <textarea type="text" rows="5" placeholder="الصق النص الخاص بك هنا ...
+                        "dir="rtl"name="request" [(ngModel)]="request"></textarea>
+                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="method" [(ngModel)]="method">
+                            <option selected disabled>اختر العملية</option>
+                            <!-- <option value="1">Punctuation</option> -->
+                            <option value="Tokenization">Tokenization</option>
+                            <option value="Stop words"> Stop words</option>
+                            <option value="Stemming">Stemming</option>
+                            <option value="Lemmatization">Lemmatization</option> 
+                            <option value="Pos Tagging">Pos Tagging </option>
+                            <option value="Bag of words"> Bag Of Words </option>
+                            <option value="TF-IDF"> TF-IDF </option>
+                            <option value="Word2Vec">Word2Vec</option>
+                           
+                          </select>
+                        <button class="check-news"type="submit" (click)="submit()">
+                           أظهر النتائج
+                        </button>
+                    </form>
+                  
+                </div>
+                <div class="mt-3 col-md-12">
+                    <div class="container ">
+                        <div class="row text-center">
+                            <div class="col-lg-12">
+                              <table class="table">
+                                  <thead class="thead-dark">
+                                    <tr>
+                                      
+                                      <th scope="col">News</th>
+                                      <th scope="col">validity</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr >
+                                     
+                                      <td>{{data?.news}}</td>
+                                      <td>{{data?.response}}</td>
+                                    </tr>
+                                   
+                                  </tbody>
+                                </table>
+                                
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Ends: .hearo-area-content -->
+  </section>
+
+  
